@@ -1,0 +1,205 @@
+scope	time	entity_type	precision	recall	f1
+year	1798	loc	0.6957	0.9412	0.8
+year	1798	pers	0.5	0.375	0.4286
+year	1798	micro avg	0.6552	0.76	0.7037
+year	1808	loc	0.9677	0.9677	0.9677
+year	1808	pers	0.875	0.875	0.875
+year	1808	time	0.5	0.6667	0.5714
+year	1808	micro avg	0.907	0.9286	0.9176
+year	1818	loc	0.8261	0.9744	0.8941
+year	1818	org	0.0	0.0	0.0
+year	1818	pers	0.7353	0.8333	0.7812
+year	1818	prod	0.0	0.0	0.0
+year	1818	time	0.2	0.3333	0.25
+year	1818	micro avg	0.7442	0.8767	0.805
+year	1828	loc	0.9677	0.9677	0.9677
+year	1828	org	0.0	0.0	0.0
+year	1828	pers	0.875	0.913	0.8936
+year	1828	prod	0.0	0.0	0.0
+year	1828	micro avg	0.9107	0.9273	0.9189
+year	1838	loc	0.8788	1.0	0.9355
+year	1838	pers	0.8636	0.95	0.9048
+year	1838	prod	0.0	0.0	0.0
+year	1838	micro avg	0.8421	0.96	0.8972
+year	1848	loc	0.9444	1.0	0.9714
+year	1848	pers	1.0	1.0	1.0
+year	1848	micro avg	0.9565	1.0	0.9778
+year	1868	loc	0.8667	0.9286	0.8966
+year	1868	org	0.6667	0.6667	0.6667
+year	1868	pers	0.9189	0.8718	0.8947
+year	1868	prod	0.625	0.5556	0.5882
+year	1868	time	1.0	1.0	1.0
+year	1868	micro avg	0.8646	0.8646	0.8646
+year	1878	loc	1.0	0.8333	0.9091
+year	1878	org	1.0	0.6667	0.8
+year	1878	pers	0.8	0.8	0.8
+year	1878	micro avg	0.9167	0.7857	0.8462
+year	1888	loc	0.7714	0.8182	0.7941
+year	1888	org	1.0	0.5	0.6667
+year	1888	pers	0.8333	0.8333	0.8333
+year	1888	prod	0.5714	1.0	0.7273
+year	1888	time	0.8333	1.0	0.9091
+year	1888	micro avg	0.7755	0.8444	0.8085
+year	1908	loc	0.8696	0.8696	0.8696
+year	1908	org	0.875	0.6364	0.7368
+year	1908	pers	0.9167	0.8462	0.88
+year	1908	time	1.0	1.0	1.0
+year	1908	micro avg	0.8913	0.82	0.8542
+year	1918	loc	0.9351	0.9351	0.9351
+year	1918	org	0.7273	0.8	0.7619
+year	1918	pers	1.0	0.9811	0.9905
+year	1918	prod	0.8333	0.8333	0.8333
+year	1918	time	0.8333	0.8333	0.8333
+year	1918	micro avg	0.9202	0.9259	0.9231
+year	1928	loc	0.8039	0.8913	0.8454
+year	1928	org	0.625	0.4167	0.5
+year	1928	pers	0.5769	0.6522	0.6122
+year	1928	prod	0.6	1.0	0.75
+year	1928	time	1.0	1.0	1.0
+year	1928	micro avg	0.7087	0.7849	0.7449
+year	1938	loc	0.8276	0.8136	0.8205
+year	1938	org	0.3226	0.4348	0.3704
+year	1938	pers	0.629	0.7222	0.6724
+year	1938	prod	0.5	0.5	0.5
+year	1938	time	0.8125	0.8667	0.8387
+year	1938	micro avg	0.6568	0.7255	0.6894
+year	1948	loc	0.8596	0.8909	0.875
+year	1948	org	0.3	0.1667	0.2143
+year	1948	pers	0.5	0.6667	0.5714
+year	1948	prod	1.0	1.0	1.0
+year	1948	time	0.4286	0.5	0.4615
+year	1948	micro avg	0.6979	0.6979	0.6979
+year	1958	loc	0.8293	0.85	0.8395
+year	1958	org	0.5333	0.5714	0.5517
+year	1958	pers	0.8571	0.8727	0.8649
+year	1958	prod	0.0	0.0	0.0
+year	1958	time	1.0	1.0	1.0
+year	1958	micro avg	0.7982	0.8198	0.8089
+year	1968	loc	0.875	0.875	0.875
+year	1968	org	0.4444	0.3636	0.4
+year	1968	pers	0.9057	0.8727	0.8889
+year	1968	prod	0.5	0.5	0.5
+year	1968	time	0.6	0.75	0.6667
+year	1968	micro avg	0.8246	0.8103	0.8174
+year	1978	loc	0.9375	0.9184	0.9278
+year	1978	org	0.25	0.5	0.3333
+year	1978	pers	0.6316	0.7059	0.6667
+year	1978	micro avg	0.8169	0.8529	0.8345
+year	1988	loc	1.0	0.8333	0.9091
+year	1988	org	0.6316	0.8	0.7059
+year	1988	pers	0.6667	1.0	0.8
+year	1988	time	1.0	1.0	1.0
+year	1988	micro avg	0.6939	0.8293	0.7556
+year	1998	loc	0.6	0.8824	0.7143
+year	1998	org	0.2105	0.6667	0.32
+year	1998	pers	0.8925	0.6484	0.7511
+year	1998	time	1.0	1.0	1.0
+year	1998	micro avg	0.6948	0.7291	0.7115
+year	2008	loc	0.8387	0.9286	0.8814
+year	2008	org	0.2	0.5	0.2857
+year	2008	pers	0.8182	0.871	0.8438
+year	2008	prod	0.0	0.0	0.0
+year	2008	time	1.0	1.0	1.0
+year	2008	micro avg	0.7534	0.7971	0.7746
+decade	1790s	loc	0.6957	0.9412	0.8
+decade	1790s	pers	0.5	0.375	0.4286
+decade	1790s	micro avg	0.6552	0.76	0.7037
+decade	1800s	loc	0.9677	0.9677	0.9677
+decade	1800s	pers	0.875	0.875	0.875
+decade	1800s	time	0.5	0.6667	0.5714
+decade	1800s	micro avg	0.907	0.9286	0.9176
+decade	1810s	loc	0.8261	0.9744	0.8941
+decade	1810s	org	0.0	0.0	0.0
+decade	1810s	pers	0.7353	0.8333	0.7812
+decade	1810s	prod	0.0	0.0	0.0
+decade	1810s	time	0.2	0.3333	0.25
+decade	1810s	micro avg	0.7442	0.8767	0.805
+decade	1820s	loc	0.9677	0.9677	0.9677
+decade	1820s	org	0.0	0.0	0.0
+decade	1820s	pers	0.875	0.913	0.8936
+decade	1820s	prod	0.0	0.0	0.0
+decade	1820s	micro avg	0.9107	0.9273	0.9189
+decade	1830s	loc	0.8788	1.0	0.9355
+decade	1830s	pers	0.8636	0.95	0.9048
+decade	1830s	prod	0.0	0.0	0.0
+decade	1830s	micro avg	0.8421	0.96	0.8972
+decade	1840s	loc	0.9444	1.0	0.9714
+decade	1840s	pers	1.0	1.0	1.0
+decade	1840s	micro avg	0.9565	1.0	0.9778
+decade	1860s	loc	0.8667	0.9286	0.8966
+decade	1860s	org	0.6667	0.6667	0.6667
+decade	1860s	pers	0.9189	0.8718	0.8947
+decade	1860s	prod	0.625	0.5556	0.5882
+decade	1860s	time	1.0	1.0	1.0
+decade	1860s	micro avg	0.8646	0.8646	0.8646
+decade	1870s	loc	1.0	0.8333	0.9091
+decade	1870s	org	1.0	0.6667	0.8
+decade	1870s	pers	0.8	0.8	0.8
+decade	1870s	micro avg	0.9167	0.7857	0.8462
+decade	1880s	loc	0.7714	0.8182	0.7941
+decade	1880s	org	1.0	0.5	0.6667
+decade	1880s	pers	0.8333	0.8333	0.8333
+decade	1880s	prod	0.5714	1.0	0.7273
+decade	1880s	time	0.8333	1.0	0.9091
+decade	1880s	micro avg	0.7755	0.8444	0.8085
+decade	1900s	loc	0.8696	0.8696	0.8696
+decade	1900s	org	0.875	0.6364	0.7368
+decade	1900s	pers	0.9167	0.8462	0.88
+decade	1900s	time	1.0	1.0	1.0
+decade	1900s	micro avg	0.8913	0.82	0.8542
+decade	1910s	loc	0.9351	0.9351	0.9351
+decade	1910s	org	0.7273	0.8	0.7619
+decade	1910s	pers	1.0	0.9811	0.9905
+decade	1910s	prod	0.8333	0.8333	0.8333
+decade	1910s	time	0.8333	0.8333	0.8333
+decade	1910s	micro avg	0.9202	0.9259	0.9231
+decade	1920s	loc	0.8039	0.8913	0.8454
+decade	1920s	org	0.625	0.4167	0.5
+decade	1920s	pers	0.5769	0.6522	0.6122
+decade	1920s	prod	0.6	1.0	0.75
+decade	1920s	time	1.0	1.0	1.0
+decade	1920s	micro avg	0.7087	0.7849	0.7449
+decade	1930s	loc	0.8276	0.8136	0.8205
+decade	1930s	org	0.3226	0.4348	0.3704
+decade	1930s	pers	0.629	0.7222	0.6724
+decade	1930s	prod	0.5	0.5	0.5
+decade	1930s	time	0.8125	0.8667	0.8387
+decade	1930s	micro avg	0.6568	0.7255	0.6894
+decade	1940s	loc	0.8596	0.8909	0.875
+decade	1940s	org	0.3	0.1667	0.2143
+decade	1940s	pers	0.5	0.6667	0.5714
+decade	1940s	prod	1.0	1.0	1.0
+decade	1940s	time	0.4286	0.5	0.4615
+decade	1940s	micro avg	0.6979	0.6979	0.6979
+decade	1950s	loc	0.8293	0.85	0.8395
+decade	1950s	org	0.5333	0.5714	0.5517
+decade	1950s	pers	0.8571	0.8727	0.8649
+decade	1950s	prod	0.0	0.0	0.0
+decade	1950s	time	1.0	1.0	1.0
+decade	1950s	micro avg	0.7982	0.8198	0.8089
+decade	1960s	loc	0.875	0.875	0.875
+decade	1960s	org	0.4444	0.3636	0.4
+decade	1960s	pers	0.9057	0.8727	0.8889
+decade	1960s	prod	0.5	0.5	0.5
+decade	1960s	time	0.6	0.75	0.6667
+decade	1960s	micro avg	0.8246	0.8103	0.8174
+decade	1970s	loc	0.9375	0.9184	0.9278
+decade	1970s	org	0.25	0.5	0.3333
+decade	1970s	pers	0.6316	0.7059	0.6667
+decade	1970s	micro avg	0.8169	0.8529	0.8345
+decade	1980s	loc	1.0	0.8333	0.9091
+decade	1980s	org	0.6316	0.8	0.7059
+decade	1980s	pers	0.6667	1.0	0.8
+decade	1980s	time	1.0	1.0	1.0
+decade	1980s	micro avg	0.6939	0.8293	0.7556
+decade	1990s	loc	0.6	0.8824	0.7143
+decade	1990s	org	0.2105	0.6667	0.32
+decade	1990s	pers	0.8925	0.6484	0.7511
+decade	1990s	time	1.0	1.0	1.0
+decade	1990s	micro avg	0.6948	0.7291	0.7115
+decade	2000s	loc	0.8387	0.9286	0.8814
+decade	2000s	org	0.2	0.5	0.2857
+decade	2000s	pers	0.8182	0.871	0.8438
+decade	2000s	prod	0.0	0.0	0.0
+decade	2000s	time	1.0	1.0	1.0
+decade	2000s	micro avg	0.7534	0.7971	0.7746

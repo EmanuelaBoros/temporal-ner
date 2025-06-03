@@ -1,0 +1,386 @@
+@misc{xiong2024largelanguagemodels,
+    author = {Siheng Xiong and Ali Payani and Ramana Kompella and Faramarz Fekri},
+    title = {Large Language Models Can Learn Temporal Reasoning},
+    year = 2024,
+    url = {https://aclanthology.org/2024.acl-long.563/}
+}
+#The study utilizes a synthetic dataset called TGQA, designed for fine-tuning large language models (LLMs) on temporal reasoning (TR) tasks. The purpose is to enhance LLMs' ability to understand and reason about temporal concepts through a novel framework, TG-LLM, which employs temporal graphs (TGs) for structured reasoning. Results indicate that the TG translation capability can be transferred to other TR tasks, improving performance through Chain-of-Thought bootstrapping and graph data augmentation. This exploration is relevant as it addresses the challenges LLMs face in understanding complex temporal logic and enhances their reasoning capabilities 1
+
+@misc{wallat2024temporalblindspots,
+    author = {Jonas Wallat and Adam Jatowt and Avishek Anand},
+    title = {Temporal Blind Spots in Large Language Models},
+    year = 2024,
+    url = {https://arxiv.org/abs/2401.12078}
+}
+#The study utilizes three temporal question-answering datasets: TemporalQuestions, ArchivalQA, and TempLAMA, to evaluate the temporal understanding of large language models (LLMs). The purpose is to investigate LLMs' limitations in handling factual temporal knowledge and their performance on temporally-oriented tasks. Results indicate low performance on detailed past questions and challenges with newer information, highlighting temporal errors and blind spots in LLMs. This exploration is relevant as it sheds light on the models' temporal comprehension abilities, informing future improvements in LLM design for better handling of temporal contexts 1
+
+@misc{yin2023historymatterstemporal,
+    author = {Xunjian Yin and Jin Jiang and Liming Yang and Xiaojun Wan},
+    title = {History Matters: Temporal Knowledge Editing in Large Language Model},
+    year = 2023,
+    url = {https://arxiv.org/abs/2312.05497}
+}
+#The study utilizes temporal knowledge data, specifically fact triples with timestamps, to explore Temporal Knowledge Editing (TKE) in large language models (LLMs). The purpose is to address the challenge of preserving historical knowledge while updating outdated information. Results indicate that existing editing methods often lead to catastrophic forgetting of historical knowledge. This exploration is relevant as it highlights the importance of maintaining a timeline of knowledge within LLMs, ensuring they can accurately respond to queries about both current and past information 1
+
+@misc{jain2023dolanguagemodels,
+    author = {Raghav Jain and Daivik Sojitra and Arkadeep Acharya and Sriparna Saha and Adam Jatowt and Sandipan Dandapat},
+    title = {Do Language Models Have a Common Sense regarding Time? Revisiting Temporal Commonsense Reasoning in the Era of Large Language Models},
+    year = 2023,
+    url = {https://aclanthology.org/2023.emnlp-main.418/}
+}
+#The study utilizes various datasets focused on temporal reasoning tasks, including MC-TACO, TimeDial, TNLI, WikiHow, BIG-bench, and TimeQA. The purpose is to benchmark the performance of different Large Language Models (LLMs) on their temporal commonsense reasoning capabilities. Results indicate that while LLMs like GPT-3.5 perform well on certain tasks, they struggle with understanding event states, exact timings, and reasoning about future events. This exploration is relevant as it highlights the limitations of LLMs in temporal reasoning, a crucial aspect of human communication and understanding 1
+
+@misc{cole2022timeawarelanguage,
+    author = {Jeremy R. Cole},
+    title = {Time-Aware Language Models as Temporal Knowledge Bases},
+    year = 2022,
+    url = {https://aclanthology.org/2022.tacl-1.15/},
+    doi = {10.1162/tacl_a_00459}
+}
+#The study utilizes a diagnostic dataset called TEMPLAMA, which probes language models (LMs) for time-sensitive factual knowledge. The purpose is to address limitations in LMs regarding memorization of facts that change over time and to improve their calibration for unseen future facts. Results indicate that models trained with temporal context show enhanced memorization and can be efficiently updated with new data without retraining from scratch. This exploration is relevant as it highlights the importance of incorporating temporal awareness in LMs to improve their utility in dynamic knowledge environments 1
+
+@misc{nylund2023timeisencoded,
+    author = {Kai Nylund and Suchin Gururangan and Noah A. Smith},
+    title = {Time is Encoded in the Weights of Finetuned Language Models},
+    year = 2023,
+    url = {https://arxiv.org/abs/2312.13401}
+}
+#The study utilizes time-stratified datasets from news and Twitter to finetune language models on specific time periods. The purpose is to create time vectors that improve model performance on text from those periods and to explore temporal misalignment in language models. Results indicate that time vectors are organized in a manifold, allowing for interpolation to enhance performance on intervening and future time periods without additional training. This exploration is relevant as it demonstrates how temporal variation is encoded in the weight space of finetuned models, addressing challenges in adapting language models to changing contexts 1
+
+@misc{gade2024itsabout,
+    author = {Anoushka Gade and Jorjeta Jetcheva},
+    title = {It's About Time: Incorporating Temporality in Retrieval Augmented Language Models},
+    year = 2024,
+    url = {https://arxiv.org/abs/2401.13222}
+}
+#The study utilizes a dataset of tennis grand slam data, capturing tournament details over time, formatted as (query, timestamp, answer) triplets. The purpose is to evaluate TempRALM, a temporally-aware Retriever Augmented Language Model, which improves retrieval accuracy by considering both semantic and temporal relevance. Results show up to 74% performance improvement over the baseline model, highlighting the importance of temporal awareness in answering time-sensitive queries accurately. This relevance underscores the need for LLMs to handle evolving information effectively, addressing challenges in information retrieval and question answering tasks 1
+
+@inproceedings{chen2021mitigating,
+    title = "Mitigating Temporal-Drift: A Simple Approach to Keep {NER} Models Crisp",
+    author = "Chen, Shuguang and Neves, Leonardo and Solorio, Thamar",
+    booktitle = "Proceedings of the Ninth International Workshop on Natural Language Processing for Social Media",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2021.socialnlp-1.14",
+    doi = "10.18653/v1/2021.socialnlp-1.14",
+    pages = "163--169"
+}
+#The study uses the Temporal Twitter Dataset, which consists of 12,000 tweets collected from 2014 to 2019, to address the degradation of named entity recognition (NER) models due to temporal drift. The purpose is to propose an efficient approach for selecting informative training instances based on tweet trendiness, enhancing model performance with less data. Results show that this method yields higher prediction accuracy compared to random sampling. This research is relevant to exploring temporality in large language models (LLMs) as it highlights the importance of adapting models to evolving data trends 1
+
+@misc{ehrmann2022introducingthehipe,
+    author = {Maud Ehrmann and Matteo Romanello and Antoine Doucet and Simon Clematide},
+    title = {Introducing the HIPE 2022 Shared Task: Named Entity Recognition and Linking in Multilingual Historical Documents.},
+    year = 2022,
+    url = {https://doi.org/10.1007/978-3-030-99739-7_44},
+    doi = {10.1007/978-3-030-99739-7_44}
+}
+#We present the HIPE-2022 shared task on named entity processing in multilingual historical documents. Following the success of the first CLEF-HIPE-2020 evaluation lab, this edition confronts systems with the challenges of dealing with more languages, learning domain-specific entities, and adapting to diverse annotation tag sets. HIPE-2022 is part of the ongoing efforts of the natural language processing and digital humanities communities to adapt and develop appropriate technologies to efficiently retrieve and explore information from historical texts. On such material, however, named entity processing techniques face the challenges of domain heterogeneity, input noisiness, dynamics of language, and lack of resources. In this context, the main objective of the evaluation lab is to gain new insights into the transferability of named entity processing approaches across languages, time periods, document types, and annotation tag sets.
+
+@misc{ehrmann2020introducingtheclef,
+    author = {Maud Ehrmann and Matteo Romanello and Stefan Bircher and Simon Clematide},
+    title = {Introducing the CLEF 2020 HIPE Shared Task: Named Entity Recognition and Linking on Historical Newspapers.},
+    year = 2020,
+    url = {https://doi.org/10.1007/978-3-030-45442-5_68},
+    doi = {10.1007/978-3-030-45442-5_68}
+}
+
+@misc{brown2020languagemodelsare,
+    author = {Tom Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared D Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel Ziegler and Jeffrey Wu and Clemens Winter and Chris Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
+    title = {Language Models are Few-Shot Learners},
+    year = 2020,
+    url = {https://papers.nips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html}
+}
+#The study utilizes a diverse dataset from CommonCrawl, high-quality reference corpora, and various internet-based sources to train GPT-3, a 175 billion parameter language model. The purpose is to evaluate its performance across multiple NLP tasks in zero-shot, one-shot, and few-shot settings. Results indicate that GPT-3 achieves strong performance, often competitive with state-of-the-art fine-tuned models, particularly in few-shot settings. This exploration is relevant to temporality in LLMs as it highlights the model's ability to adapt and learn from context, reflecting temporal understanding in language processing.
+
+@misc{rijhwani2020temporallyinformed,
+    author = {Shruti Rijhwani and Daniel Preotiuc-Pietro},
+    title = {Temporally-Informed Analysis of Named Entity Recognition},
+    year = 2020,
+    url = {https://www.aclweb.org/anthology/2020.acl-main.680/}
+}
+#The study utilizes a novel dataset of 12,000 English tweets annotated with named entities, collected over six years (2014-2019). The purpose is to analyze the impact of temporal drift on named entity recognition (NER) performance and to propose methods that leverage temporal information for improved model accuracy. Results indicate that models trained on temporally relevant data perform better, highlighting the importance of considering temporal aspects in NLP tasks. This exploration is relevant for large language models (LLMs) as it informs how temporal dynamics can enhance model robustness and adaptability to evolving language use 1
+
+@misc{pawłowski2024nlpfordigital,
+    author = {Adam Pawłowski and Tomasz Walkowiak},
+    title = {NLP for Digital Humanities: Processing Chronological Text Corpora},
+    year = 2024,
+    url = {https://aclanthology.org/2024.nlp4dh-1.10/}
+}
+#The study utilizes the ChronoPress corpus, which consists of 22 years of Polish press data from 1945 to 1966. Its purpose is to create a reference workflow for analyzing chronological text corpora using NLP techniques, focusing on lexical series to uncover cultural and historical patterns. The results include the identification of nearly 100,000 lexical series and the detection of anomalies and trends, highlighting the potential of NLP in exploring temporality and its relevance in understanding language dynamics over time 1
+
+@misc{gonzález-gallardo2023injectingtemporal,
+    author = {Carlos-Emiliano González-Gallardo and Emanuela Boros and Edward Giamphy and Ahmed Hamdi and José G. Moreno and Antoine Doucet},
+    title = {Injecting Temporal-Aware Knowledge in Historical Named Entity Recognition.},
+    year = 2023,
+    url = {https://doi.org/10.1007/978-3-031-28244-7_24},
+    doi = {10.1007/978-3-031-28244-7_24}
+}
+#In this paper, we address the detection of named entities in multilingual historical collections. We argue that, besides the multiple challenges that depend on the quality of digitization (e.g., misspellings and linguistic errors), historical documents can pose another challenge due to the fact that such collections are distributed over a long enough period of time to be affected by changes and evolution of natural language. Thus, we consider that detecting entities in historical collections is time-sensitive, and explore the inclusion of temporality in the named entity recognition (NER) task by exploiting temporal knowledge graphs. More precisely, we retrieve semantically-relevant additional contexts by exploring the time information provided by historical data collections and include them as mean-pooled representations in a Transformer-based NER model. We experiment with two recent multilingual historical collections in English, French, and German, consisting of historical newspapers (19C-20C) and classical commentaries (19C). The results are promising and show the effectiveness of injecting temporal-aware knowledge into the different datasets, languages, and diverse entity types.
+
+@misc{agarwal2018dianedtimeaware,
+    author = {Prabal Agarwal and Jannik Strötgen and Luciano del Corro and Johannes Hoffart and Gerhard Weikum},
+    title = {diaNED: Time-Aware Named Entity Disambiguation for Diachronic Corpora},
+    year = 2018,
+    url = {https://www.aclweb.org/anthology/P18-2109/}
+}
+#The study utilizes diachronic corpora, specifically a newly created dataset containing historical texts and news articles, to evaluate Named Entity Disambiguation (NED) systems. The purpose is to introduce a time-aware NED method that resolves ambiguities in texts spanning long time periods. Results demonstrate that this method significantly improves disambiguation quality compared to standard NED tools, highlighting the importance of temporal context in enhancing NED performance. This relevance extends to exploring temporality in large language models (LLMs) by emphasizing the need for temporal awareness in understanding historical contexts.
+
+@misc{wang2024towardseffectivetime,
+    author = {Jiexin Wang and Adam Jatowt and Yi Cai},
+    title = {Towards Effective Time-Aware Language Representation: Exploring Enhanced Temporal Understanding in Language Models},
+    year = 2024,
+    url = {https://arxiv.org/abs/2406.01863}
+}
+#BiTimeBERT 2.0 is pre-trained on a temporal news article collection, focusing on enhancing temporal understanding in language models. Its purpose is to improve temporal reasoning through three objectives: Extended Time-Aware Masked Language Modeling (ETAMLM), Document Dating (DD), and Time-Sensitive Entity Replacement (TSER). The results show significant performance improvements in various time-related tasks, demonstrating its effectiveness in capturing temporal dynamics, particularly for "Person" entities. This relevance lies in its ability to integrate both content time and document timestamps, addressing limitations of traditional models in understanding temporal contexts 1
+
+@misc{hiltmann2025ner4allorcontext,
+    author = {Torsten Hiltmann and Martin Dröge and Nicole Dresselhaus and Till Grallert and Melanie Althage and Paul Bayer and Sophie Eckenstaler and Koray Mendi and Jascha Marijn Schmitz and Philipp Schneider and Wiebke Sczeponik and Anica Skibba},
+    title = {NER4all or Context is All You Need: Using LLMs for low-effort, high-performance NER on historical texts. A humanities informed approach},
+    year = 2025,
+    url = {https://arxiv.org/abs/2502.04351}
+}
+#The study utilizes historical texts, specifically the 1921 Baedeker travel guide for Berlin, to evaluate named entity recognition (NER) using large language models (LLMs). The purpose is to demonstrate how LLMs can effectively identify and classify entities in diverse historical documents, outperforming traditional NLP frameworks like spaCy and flair by 7-22% in F1-Scores. This research is relevant to exploring temporality in LLMs as it highlights the models' ability to process and understand historical context, thereby enhancing their application in humanities research.
+
+@misc{ushio2022namedentityrecognition,
+    author = {Asahi Ushio and Francesco Barbieri and Vitor Sousa and Leonardo Neves and Jose Camacho-Collados},
+    title = {Named Entity Recognition in Twitter: A Dataset and Analysis on Short-Term Temporal Shifts},
+    year = 2022,
+    url = {https://aclanthology.org/2022.aacl-main.25/}
+}
+#The study utilizes a dataset called TweetNER7, comprising 11,382 annotated tweets from Twitter, covering seven entity types from September 2019 to August 2021. The purpose is to analyze Named Entity Recognition (NER) in the context of social media, focusing on short-term temporal shifts in language model performance. Results indicate that self-labeling strategies do not significantly mitigate temporal shifts, highlighting the challenges posed by the dynamic nature of social media. This relevance lies in understanding how language models adapt to evolving semantics over time, crucial for improving NER in real-world applications.
+
+@misc{han2019jointeventand,
+    author = {Rujun Han and Qiang Ning and Nanyun Peng},
+    title = {Joint Event and Temporal Relation Extraction with Shared Representations and Structured Prediction},
+    year = 2019,
+    url = {https://www.aclweb.org/anthology/D19-1041/},
+    doi = {10.18653/v1/D19-1041}
+}
+#The study utilizes temporal relation corpora, specifically TB-Dense and MATRES datasets, to explore joint event and temporal relation extraction. The purpose is to develop a model that simultaneously extracts events and their temporal relations, improving accuracy and avoiding error propagation seen in traditional pipeline systems. Results show significant improvements, with F1 scores increasing by 10% on TB-Dense and 6.8% on MATRES compared to state-of-the-art systems. This research is relevant for enhancing the understanding of temporality in large language models (LLMs) by providing a robust framework for temporal relation extraction 1
+
+@article{jiang2019towards,
+  title={Towards Time-Aware Distant Supervision for Relation Extraction},
+  author={Jiang, Tianwen and Zhao, Sendong and Liu, Jing and Yao, Jin-Ge and Liu, Ming and Qin, Bing and Liu, Ting and Lin, Chin-Yew},
+  journal={arXiv preprint arXiv:1903.03289},
+  year={2019}
+}
+#The study utilizes a multi-source news corpus containing approximately 42 million articles spanning eight months. The purpose is to develop a time-aware distant supervision framework (Time-DS) to improve relation extraction by addressing the wrong labeling problem in distant supervision through the incorporation of temporal factors. Results indicate that Time-DS significantly enhances relation extraction performance by effectively utilizing time series instance-popularity and employing strategies like hard filter and curriculum learning. This relevance to temporality in LLMs lies in its ability to leverage time-sensitive data for more accurate and contextually aware model training 1
+
+@inproceedings{ehrmann_extended_2022,
+  title = {Extended Overview of {{HIPE-2022}}: {{Named Entity Recognition}} and {{Linking}} in {{Multilingual Historical Documents}}},
+  booktitle = {Proceedings of the {{Working Notes}} of {{CLEF}} 2022 - {{Conference}} and {{Labs}} of the {{Evaluation Forum}}},
+  author = {Ehrmann, Maud and Romanello, Matteo and {Najem-Meyer}, Sven and Doucet, Antoine and Clematide, Simon},
+  editor = {Faggioli, Guglielmo and Ferro, Nicola and Hanbury, Allan and Potthast, Martin},
+  year = {2022},
+  volume = {3180},
+  publisher = {{CEUR-WS}},
+  doi = {10.5281/zenodo.6979577},
+  url = {http://ceur-ws.org/Vol-3180/paper-83.pdf}
+}
+
+@misc{ushio2022namedentityrecognition,
+    author = {Asahi Ushio and Francesco Barbieri and Vitor Sousa and Leonardo Neves and Jose Camacho-Collados},
+    title = {Named Entity Recognition in Twitter: A Dataset and Analysis on Short-Term Temporal Shifts},
+    year = 2022,
+    url = {https://aclanthology.org/2022.aacl-main.25/}
+}
+#The study utilizes a dataset called TweetNER7, comprising 11,382 annotated tweets from Twitter, covering seven entity types from September 2019 to August 2021. The purpose is to analyze Named Entity Recognition (NER) in the context of social media, focusing on short-term temporal shifts in language model performance. Results indicate that self-labeling strategies do not significantly mitigate temporal shifts, highlighting the challenges posed by the dynamic nature of social media. This relevance lies in understanding how language models adapt to evolving semantics over time, crucial for improving NER in real-world applications 1
+
+@misc{ning2019animprovedneural,
+    author = {Qiang Ning and Sanjay Subramanian and Dan Roth},
+    title = {An Improved Neural Baseline for Temporal Relation Extraction},
+    year = 2019,
+    url = {https://arxiv.org/abs/1909.00429}
+}
+#The study utilizes the MATRES dataset, which contains high-quality temporal relations (TempRels) between events. The purpose is to improve temporal relation extraction using a new neural system that incorporates contextualized word embeddings and a common sense knowledge base. The results show a 10% absolute improvement in accuracy over the previous best system, indicating that better data quality enhances performance. This research is relevant for exploring temporality in large language models (LLMs) as it establishes a strong baseline for future advancements in understanding temporal relations in natural language.
+
+@misc{vashishtha2020temporalreasoning,
+    author = {Siddharth Vashishtha and Adam Poliak and Yash Kumar Lal and Benjamin Van Durme and Aaron Steven White},
+    title = {Temporal Reasoning in Natural Language Inference},
+    year = 2020,
+    url = {https://www.aclweb.org/anthology/2020.findings-emnlp.363/},
+    doi = {10.18653/v1/2020.findings-emnlp.363}
+}
+#The study introduces five new natural language inference (NLI) datasets focused on temporal reasoning, recasting four existing datasets related to event duration and ordering into over one million NLI examples. The purpose is to evaluate how well neural models trained on a popular NLI corpus capture temporal reasoning. Results indicate that common models perform poorly on these datasets, highlighting the need for additional supervised training on temporal reasoning-specific datasets. This exploration is relevant as it addresses the limitations of existing models in understanding temporal aspects, crucial for improving language understanding in large language models.
+
+#### temporality in large language models
+#Temporality in large language models (LLMs) refers to their ability to understand, reason about, and process temporal information, such as the sequence, continuity, and progression of events over time. Research highlights several aspects:
+#
+#    Temporal Reasoning: LLMs often struggle with tasks requiring temporal understanding, such as predicting event sequences or reasoning about time-sensitive information. Benchmarking studies reveal gaps in their temporal comprehension and reasoning capabilities, though fine-tuning can improve performance 
+#
+#Temporal Blind Spots: LLMs face challenges due to the temporal limitations of their training data, which may lack freshness or comprehensive historical coverage. This affects their ability to handle both past and recent temporal queries effectively
+#
+#Time Directionality: Studies show asymmetry in LLMs' ability to predict forward versus backward in time, which is theoretically surprising but explained by computational and sparsity considerations 
+
+@misc{qiu2023arelargelanguage,
+    author = {Yifu Qiu and Zheng Zhao and Yftah Ziser and Anna Korhonen and Edoardo M. Ponti and Shay B. Cohen},
+    title = {Are Large Language Models Temporally Grounded?},
+    year = 2023,
+    url = {https://arxiv.org/abs/2311.08398}
+}
+#The study evaluates large language models (LLMs) using textual narratives to assess their temporal reasoning capabilities, focusing on commonsense knowledge, event ordering, and self-consistency. The data includes benchmarks like McTACO, CaTeRS, and TempEvalQA-Bi, which test these aspects. Results show LLMs, including GPT-4, significantly lag behind human performance and specialized models, struggling particularly with self-consistency. This exploration is relevant as it highlights the limitations of LLMs in temporal grounding, suggesting that current training paradigms do not adequately equip them for understanding temporal dynamics 1
+
+@misc{jain2023dolanguagemodels,
+    author = {Raghav Jain and Daivik Sojitra and Arkadeep Acharya and Sriparna Saha and Adam Jatowt and Sandipan Dandapat},
+    title = {Do Language Models Have a Common Sense regarding Time? Revisiting Temporal Commonsense Reasoning in the Era of Large Language Models},
+    year = 2023,
+    url = {https://aclanthology.org/2023.emnlp-main.418/}
+}
+#The study utilizes various datasets focused on temporal reasoning tasks, including MC-TACO, TimeDial, TNLI, WikiHow, BIG-bench, and TimeQA. The purpose is to benchmark the performance of different Large Language Models (LLMs) on their temporal commonsense reasoning capabilities. Results indicate that while LLMs like GPT-3.5 perform well on certain tasks, they struggle with understanding event states, exact timings, and reasoning about future events. This exploration is relevant as it highlights the limitations of LLMs in temporal reasoning, a crucial aspect of human communication and understanding.
+
+@misc{wallat2024temporalblindspots,
+    author = {Jonas Wallat and Adam Jatowt and Avishek Anand},
+    title = {Temporal Blind Spots in Large Language Models},
+    year = 2024,
+    url = {https://arxiv.org/abs/2401.12078}
+}
+#The study utilizes three temporal question-answering datasets: TemporalQuestions, ArchivalQA, and TempLAMA, to evaluate the temporal understanding of large language models (LLMs). The purpose is to investigate LLMs' limitations in handling factual temporal knowledge and their performance on temporally-oriented tasks. Results indicate low performance on detailed past questions and challenges with newer information, highlighting temporal errors and blind spots in LLMs. This exploration is relevant as it sheds light on the models' temporal comprehension abilities, informing future improvements in LLM design for better handling of temporal contexts.
+
+@misc{xiong2024largelanguagemodels,
+    author = {Siheng Xiong and Ali Payani and Ramana Kompella and Faramarz Fekri},
+    title = {Large Language Models Can Learn Temporal Reasoning},
+    year = 2024,
+    url = {https://aclanthology.org/2024.acl-long.563/}
+}
+#The study utilizes a synthetic dataset called TGQA, designed for fine-tuning large language models (LLMs) on temporal reasoning (TR) tasks. The purpose is to enhance LLMs' ability to understand and reason about temporal concepts through a novel framework, TG-LLM, which employs temporal graphs (TGs) for structured reasoning. Results indicate that the TG translation capability can be transferred to other TR tasks, improving performance through Chain-of-Thought bootstrapping and graph data augmentation. This exploration is relevant as it addresses the challenges LLMs face in understanding complex temporal logic and enhances their reasoning capabilities.
+
+@misc{ruiz2025onthetemporal,
+    author = {Alfredo Garrachón Ruiz and Tomás de la Rosa and Daniel Borrajo},
+    title = {On the Temporal Question-Answering Capabilities of Large Language Models Over Anonymized Data},
+    year = 2025,
+    url = {https://arxiv.org/abs/2504.07646}
+}
+#The study utilizes structured and semi-structured anonymized data to explore the temporal reasoning capabilities of Large Language Models (LLMs). The purpose is to assess LLM performance on temporal question-answering tasks without relying on prior knowledge, using the newly created Reasoning and Answering Temporal Ability dataset (RATA) featuring 5,850 questions. Results indicate that integrated approaches, such as using external functions, significantly enhance accuracy (up to 93%) compared to standalone LLMs (59%). This exploration is relevant as it addresses the limitations of LLMs in handling temporal reasoning tasks effectively.
+
+@misc{papadopoulos2024arrowsoftime,
+    author = {Vassilis Papadopoulos and Jérémie Wenger and Clément Hongler},
+    title = {Arrows of Time for Large Language Models},
+    year = 2024,
+    url = {https://openreview.net/forum?id=UpSe7ag34v}
+}
+#The study uses large monolingual text datasets from the CC-100 dataset, focusing on languages like English and French. The purpose is to investigate the Arrow of Time (AoT) in autoregressive Large Language Models (LLMs) by comparing forward (FW) and backward (BW) token prediction. Results show a consistent FW AoT, where FW models exhibit lower perplexity than BW models, indicating a time asymmetry in learning. This is relevant as it highlights how temporal directionality influences LLM performance, revealing deeper insights into language modeling and learning dynamics.
+
+@misc{beniwal2024rememberthisevent,
+    author = {Himanshu Beniwal and Dishant Patel and Kowsik Nandagopan D and Hritik Ladia and Ankit Yadav and Mayank Singh},
+    title = {Remember This Event That Year? Assessing Temporal Information and Reasoning in Large Language Models},
+    year = 2024,
+    url = {https://arxiv.org/abs/2402.11997}
+}
+#The study utilizes a novel numerical-temporal dataset called TempUN, which spans from 10,000 BCE to 2100 CE, containing over 9.4 million samples across various global issues defined by the United Nations. The purpose is to assess the ability of Large Language Models (LLMs) to retain and reason about temporal information. Results indicate significant limitations in LLMs' temporal knowledge retention and reasoning capabilities, with open-source models performing better than closed-source ones. This exploration is relevant as it addresses the critical need for LLMs to understand the sequential nature of events in real-world applications.
+
+@misc{ding2024dolanguagemodels,
+    author = {Xi Ding and Lei Wang},
+    title = {Do Language Models Understand Time?},
+    year = 2024,
+    url = {https://arxiv.org/abs/2412.13845}
+}
+#The study utilizes video data, specifically focusing on action recognition, anomaly detection, and video summarization tasks. The purpose is to examine the temporal reasoning capabilities of large language models (LLMs) and their interaction with pretrained video encoders. Results indicate that while LLMs can process temporal information, they struggle with long-term dependencies and abstract temporal concepts like causality. This exploration is relevant as it highlights the limitations of current models and datasets, emphasizing the need for improved temporal understanding in LLMs to enhance their performance in video analysis.
+
+@misc{xiong2024temporalscalinglaw,
+    author = {Yizhe Xiong and Xiansheng Chen and Xin Ye and Hui Chen and Zijia Lin and Haoran Lian and Zhenpeng Su and Jianwei Niu and Guiguang Ding},
+    title = {Temporal Scaling Law for Large Language Models},
+    year = 2024,
+    url = {https://arxiv.org/abs/2404.17785}
+}
+#The study utilizes the Pile dataset, a large-scale corpus for language model pre-training, and two validation datasets: in-distribution (ID) and out-of-distribution (OOD) for test loss calculation. The purpose is to introduce the Temporal Scaling Law, which models how test loss evolves during LLM pre-training. Results show that this law accurately predicts test loss across training steps, enhancing hyperparameter selection and understanding of LLM dynamics. This exploration of temporality is crucial for improving model performance and efficiency in training large language models.
+
+@misc{tan2023towardsbenchmarking,
+    author = {Qingyu Tan and Hwee Tou Ng and Lidong Bing},
+    title = {Towards Benchmarking and Improving the Temporal Reasoning Capability of Large Language Models},
+    year = 2023,
+    url = {https://arxiv.org/abs/2306.08952}
+}
+#The study utilizes a comprehensive dataset called TEMPREASON, which includes time-sensitive questions across three levels of temporal reasoning: time-time, time-event, and event-event relations. The purpose is to evaluate and improve the temporal reasoning capabilities of large language models (LLMs). Results indicate that LLMs perform variably based on the reference time, with better performance on contemporary years. This exploration is relevant as it addresses the biases in LLMs regarding temporal understanding and aims to enhance their reasoning capabilities in real-world applications.
+
+@misc{tan2023towardsbenchmarking,
+    author = {Qingyu Tan and Hwee Tou Ng and Lidong Bing},
+    title = {Towards Benchmarking and Improving the Temporal Reasoning Capability of Large Language Models},
+    year = 2023,
+    url = {https://aclanthology.org/2023.acl-long.828/}
+}
+#The study utilizes a comprehensive dataset called TEMPREASON, which includes time-sensitive questions across three levels of temporal reasoning: time-time, time-event, and event-event relations. The purpose is to evaluate and improve the temporal reasoning capabilities of large language models (LLMs). Results indicate that LLMs perform variably based on the reference time, with better performance on contemporary years. This exploration is relevant as it addresses the biases in LLMs regarding temporal understanding and aims to enhance their reasoning capabilities in real-world applications 1
+
+@misc{liu2024stllmlarge,
+    author = {Ruyang Liu and Chen Li and Haoran Tang and Yixiao Ge and Ying Shan and Ge Li},
+    title = {ST-LLM: Large Language Models Are Effective Temporal Learners},
+    year = 2024,
+    url = {https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7364_ECCV_2024_paper.php}
+}
+#The study utilizes video data for training ST-LLM, focusing on enhancing video comprehension through effective spatial-temporal modeling. The purpose is to explore whether all spatial-temporal tokens can be fed into LLMs to improve video understanding. Results show that ST-LLM achieves state-of-the-art performance on benchmarks like VideoChatGPT-Bench and MVBench, demonstrating significant improvements in temporal understanding. This relevance lies in addressing challenges in video-based dialogue systems, showcasing LLMs' potential in processing complex temporal dynamics effectively 1
+
+@misc{nako2025navigatingtomorrow,
+    author = {Petraq Nako and Adam Jatowt},
+    title = {Navigating Tomorrow: Reliably Assessing Large Language Models Performance on Future Event Prediction},
+    year = 2025,
+    url = {https://arxiv.org/abs/2501.05925}
+}
+#The study utilizes a specialized dataset of over 5,000 future event summaries, categorized by entity type and popularity, to evaluate large language models (LLMs) in future prediction tasks. The purpose is to assess LLMs' predictive capabilities across various scenarios, including likelihood questioning and reasoning. Results indicate that the likelihood approach generally outperforms affirmative questioning, while reasoning improves recall but increases false positives. This research is relevant as it enhances understanding of LLMs' temporal reasoning and predictive modeling, addressing gaps in their performance on future events 1
+
+@misc{chang2024acomprehensiveevaluation,
+    author = {He Chang and Chenchen Ye and Zhulin Tao and Jie Wu and Zhengmao Yang and Yunshan Ma and Xianglin Huang and Tat-Seng Chua},
+    title = {A Comprehensive Evaluation of Large Language Models on Temporal Event Forecasting},
+    year = 2024,
+    url = {https://arxiv.org/abs/2407.11638}
+}
+#The study utilizes a benchmark dataset named MidEast-TE-mini, which combines both structured events and raw textual data to evaluate Large Language Models (LLMs) on temporal event forecasting. The purpose is to systematically assess LLM capabilities in predicting future events based on historical data. Results indicate that fine-tuning LLMs with raw texts significantly enhances performance, while retrieval modules help capture temporal relational patterns. This exploration is relevant as it addresses the under-explored reasoning capabilities of LLMs in temporal contexts and highlights challenges like popularity bias and long-tail issues in event forecasting 1
+
+@misc{zheng2024understandingwhylarge,
+    author = {Liangwei Nathan Zheng and Chang George Dong and Wei Emma Zhang and Lin Yue and Miao Xu and Olaf Maennel and Weitong Chen},
+    title = {Understanding Why Large Language Models Can Be Ineffective in Time Series Analysis: The Impact of Modality Alignment},
+    year = 2024,
+    url = {https://arxiv.org/abs/2410.12326}
+}
+#The study utilizes time series data for tasks such as forecasting, classification, imputation, and anomaly detection. The purpose is to assess the effectiveness of Large Language Models (LLMs) in these tasks compared to simpler models like linear regressions. Results indicate that LLMs provide minimal advantages and may distort temporal structures, while simpler models consistently outperform them. This is relevant as it highlights the limitations of LLMs in capturing temporal dependencies inherent in time series data, emphasizing the need for models specifically designed for such tasks 1
+
+@misc{ko2023largelanguagemodels,
+    author = {Dohwan Ko and Ji Soo Lee and Wooyoung Kang and Byungseok Roh and Hyunwoo J. Kim},
+    title = {Large Language Models are Temporal and Causal Reasoners for Video Question Answering},
+    year = 2023,
+    url = {https://aclanthology.org/2023.emnlp-main.261/}
+}
+#The study utilizes large-scale video datasets for Video Question Answering (VideoQA), focusing on causal and temporal questions. The purpose is to investigate how Large Language Models (LLMs) leverage their prior knowledge for temporal and causal reasoning through a novel framework called Flipped-VQA. Results show that LLaMA-VQA, developed using this framework, outperforms both LLMs-based and non-LLMs-based models across five benchmarks, demonstrating enhanced reasoning capabilities and reduced linguistic bias. This exploration is relevant as it highlights LLMs' ability to understand complex temporal relationships, crucial for effective multi-modal reasoning 1
+
+@misc{islakoglu2025chronosenseexploring,
+    author = {Duygu Sezen Islakoglu and Jan-Christoph Kalo},
+    title = {ChronoSense: Exploring Temporal Understanding in Large Language Models with Time Intervals of Events},
+    year = 2025,
+    url = {https://arxiv.org/abs/2501.03040}
+}
+#ChronoSense utilizes real-world data from Wikidata and abstract events to evaluate the temporal understanding of Large Language Models (LLMs). Its purpose is to assess LLMs' performance on identifying Allen relations and performing temporal arithmetic through 16 distinct tasks. The results indicate that models struggle with temporal reasoning, often relying on memorization rather than true reasoning, highlighting significant gaps in their temporal understanding. This research is relevant as it addresses the underexplored area of temporal reasoning in LLMs, providing a framework for future studies in this critical aspect of natural language understanding 1
+
+@misc{liu2024howcanlarge,
+    author = {Lei Liu and Shuo Yu and Runze Wang and Zhenxun Ma and Yanming Shen},
+    title = {How Can Large Language Models Understand Spatial-Temporal Data?},
+    year = 2024,
+    url = {https://arxiv.org/abs/2401.14192}
+}
+#The study utilizes spatial-temporal data, specifically from traffic, electricity, and financial datasets, to enhance Large Language Models (LLMs) for spatial-temporal forecasting. The purpose is to develop STG-LLM, which employs a spatial-temporal graph tokenizer and adapter to enable LLMs to comprehend complex spatial-temporal relationships. Results show that STG-LLM achieves competitive performance comparable to state-of-the-art methods while requiring minimal fine-tuning. This relevance lies in its potential to leverage LLMs' reasoning capabilities for understanding temporality, addressing challenges in traditional forecasting methods 1
+
+@misc{lazaridou2021mindthegap,
+    author = {Angeliki Lazaridou and Adhi Kuncoro and Elena Gribovskaya and Devang Agrawal and Adam Liska and Tayfun Terzi and Mai Gimenez and Cyprien de Masson d'Autume and Tomas Kocisky and Sebastian Ruder and Dani Yogatama and Kris Cao and Susannah Young and Phil Blunsom},
+    title = {Mind the Gap: Assessing Temporal Generalization in Neural Language Models},
+    year = 2021,
+    url = {https://papers.nips.cc/paper/2021/hash/f5bf0ba0a17ef18f9607774722f5698c-Abstract.html}
+}
+#The study utilizes news and scientific articles, specifically datasets from WMT News Crawl and arXiv, to evaluate how well language models generalize over time. The purpose is to assess the temporal generalization ability of Transformer language models, revealing that they perform worse when predicting future utterances beyond their training period. Results indicate that model performance degrades with time, emphasizing the need for adaptive models that can integrate new information. This exploration is relevant as it addresses the challenges posed by non-stationary data in real-world applications of language models 3
+
+## others including datasets
+@misc{jia2018tempquestionsabenchmark,
+    author = {Zhen Jia and Abdalghani Abujabal and Rishiraj Saha Roy and Jannik Strötgen and Gerhard Weikum},
+    title = {TempQuestions: A Benchmark for Temporal Question Answering.},
+    year = 2018,
+    url = {https://doi.org/10.1145/3184558.3191536},
+    doi = {10.1145/3184558.3191536}
+}
+#Answering complex questions is one of the challenges that question-answering (QA) systems face today. While complexity has several facets, question dimensions like temporal and spatial intents necessitate specialized treatment. Methods geared towards such questions need benchmarks that reflect the desired aspects and challenges. Here, we take a key step in this direction, and release a new benchmark, TempQuestions, containing 1,271 questions, that are all temporal in nature, paired with their answers. As a key contribution that enabled the creation of this resource, we provide a crisp definition for temporal questions. Most questions require decomposing them into sub-questions, and the questions are of a kind that they would be best evaluated on a combination of structured data and unstructured text sources. Experiments with two QA systems demonstrate the need for further research on complex questions.
+
+@misc{gruber2024complextempqaalarge,
+    author = {Raphael Gruber and Abdelrahman Abdallah and Michael Färber and Adam Jatowt},
+    title = {ComplexTempQA: A Large-Scale Dataset for Complex Temporal Question Answering},
+    year = 2024,
+    url = {https://arxiv.org/abs/2406.04866}
+}
+#COMPLEXTEMPQA utilizes over 100 million question-answer pairs derived from Wikipedia and Wikidata, focusing on complex temporal questions. Its purpose is to enhance the evaluation and training of large language models (LLMs) in temporal question answering, addressing challenges in understanding temporal knowledge. The dataset's results reveal insights into LLM performance across various question types, highlighting their reasoning capabilities over time. This relevance lies in its ability to identify temporal blind spots and improve LLMs' temporal commonsense reasoning, thus advancing research in question answering and language understanding 1
+

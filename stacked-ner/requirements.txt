@@ -1,0 +1,10 @@
+typing
+torch
+flair
+nltk
+spacy
+transformers
+tqdm
+numpy
+fastNLP==0.7.0
+spacy_langdetect
