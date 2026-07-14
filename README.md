@@ -31,3 +31,32 @@ The implementation extends multilingual Transformer token-classification models 
 - optional Weights & Biases logging and distributed training utilities.
 
 The experiments described in the paper show that temporal information can be useful, but its effect depends strongly on where and how it is injected. Late-fusion approaches are generally more robust, particularly for earlier and noisier historical periods.
+
+## Repository structure
+
+```text
+.
+├── temporal-ner/                 # Main temporal NER implementation
+│   ├── main.py                   # Training and evaluation entry point
+│   ├── models.py                 # NER models and temporal fusion modules
+│   ├── dataset.py                # HIPE/CoNLL reader and label alignment
+│   ├── probe.py                  # Temporal probing experiments
+│   ├── postprocess.py            # Result aggregation and post-processing
+│   ├── plots.py                  # Plotting utilities
+│   ├── data/hipe2020/            # French, German, and English HIPE files
+│   ├── experiments/              # Saved experiment metadata and statistics
+│   ├── images/                   # Figures generated from the experiments
+│   └── notebooks/                # Result-analysis notebooks
+├── simple-ner/                   # Simpler NER baselines and prototypes
+├── stacked-ner/                  # Stacked embedding NER experiments
+├── old-stacked-ner/              # Some random stacked NER experiments
+├── hf/                           # Hugging Face model configuration/code
+├── HIPE-scorer_backup/           # Local copy of the HIPE evaluation utilities
+├── results/                      # Selected result files
+├── probing_results.tsv           # Aggregated probing results
+└── LICENSE                       # GNU General Public License v3.0
+```
+
+The actively relevant implementation for the paper is under [`temporal-ner/`](temporal-ner/).
+
+
