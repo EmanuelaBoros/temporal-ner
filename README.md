@@ -121,6 +121,34 @@ temporal-ner/data/hipe2020/
 
 Please consult and respect the licenses and citation requirements of the original HIPE datasets.
 
+## Temporal representations
+
+The model can use the year either directly or as an offset from the minimum supported year.
+
+| Representation | Command-line setting | Description |
+|---|---|---|
+| Absolute | default | Uses the calendar year as the temporal index. |
+| Relative | `--use_relative_year` | Maps a year to a zero-based offset from the minimum year. |
+
+The current dataset implementation assumes dates between **1700 and 2025**.
+
+## Fusion strategies
+
+Pass a strategy using `--temporal_fusion_strategy`.
+
+| Strategy | Type | Description |
+|---|---|---|
+| `baseline` | No temporal fusion | Uses only the contextual token representations. |
+| `add` | Late fusion | Adds a learned year embedding to every token. |
+| `concat` | Late fusion | Concatenates token and year representations, followed by projection. |
+| `film` | Late fusion | Applies feature-wise affine modulation conditioned on the year. |
+| `adapter` | Late fusion | Adds a small year-conditioned feed-forward adapter. |
+| `relative` | Late fusion | Encodes the temporal representation before FiLM-style modulation. |
+| `multiscale` | Late fusion | Combines year, decade, and century embeddings. |
+| `early-cross-attention` | Early fusion | Applies token-to-time cross-attention before the Transformer encoder. |
+| `late-cross-attention` | Late fusion | Applies token-to-time cross-attention after contextual encoding. |
+
+
 
 
 
