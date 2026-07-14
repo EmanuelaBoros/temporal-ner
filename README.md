@@ -59,4 +59,36 @@ The experiments described in the paper show that temporal information can be use
 
 The actively relevant implementation for the paper is under [`temporal-ner/`](temporal-ner/).
 
+## Installation
+
+A recent Python 3 environment is recommended. The repository does not currently pin package versions, so create an isolated environment before installing the dependencies.
+
+```bash
+git clone https://github.com/EmanuelaBoros/temporal-ner.git
+cd temporal-ner
+
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+
+python -m pip install --upgrade pip
+pip install \
+  torch \
+  transformers \
+  accelerate \
+  peft \
+  seqeval \
+  pandas \
+  numpy \
+  tqdm \
+  wandb \
+  tensorboard \
+  scikit-learn \
+  matplotlib \
+  jupyter
+```
+
+For GPU training, install the PyTorch build matching the CUDA version available on your system.
+
+
+
 
