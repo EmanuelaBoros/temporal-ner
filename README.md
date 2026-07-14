@@ -244,9 +244,79 @@ python main.py \
 
 The evaluation code reports sequence-labeling precision, recall, and F1 using `seqeval`, and writes prediction and analysis artifacts to the experiment directory.
 
+## Experiment outputs
 
+Each run creates a model-specific directory under `--output_dir`. Depending on the selected mode, it may contain:
 
+```text
+logging.log
+label_map.json
+entity_statistics_train.tsv
+entity_statistics_dev.tsv
+entity_statistics_test.tsv
+pytorch_model.bin
+all_results_*.json
+prediction files
+```
 
+The output directory name records the model, maximum sequence length, number of epochs, model type, fusion strategy, and temporal representation.
+
+## Optional experiment tracking
+
+Enable Weights & Biases logging with:
+
+```bash
+--wandb
+```
+
+Runs are logged under the project name `long-horizon` by the current implementation.
+
+## Analysis and visualisation
+
+The repository contains notebooks and generated figures for:
+
+- yearly F1 by temporal strategy;
+- absolute versus relative temporal encoding;
+- entity-frequency and entity-type analyses;
+- gains relative to the non-temporal baseline;
+- early versus late fusion comparisons;
+- temporal probing accuracy;
+- representation visualisation with t-SNE.
+
+Start Jupyter from the repository root:
+
+```bash
+jupyter notebook temporal-ner/notebooks/
+```
+
+## Reproducibility notes
+
+- Set the random seed with `--seed`; the default is `42`.
+- Keep the dataset split, tokenizer, label map, and temporal representation identical when comparing fusion strategies.
+- The code automatically generates a `label_map.json` inside the experiment directory.
+- Experiments may be skipped when result files already exist in the target directory.
+- For fair temporal comparisons, use the same encoder, sequence length, learning rate, batch size, and number of epochs.
+- This is research code and contains several experimental branches; inspect the selected configuration before launching large runs.
+
+## Citation
+
+Please cite the paper when using this repository:
+
+```bibtex
+@article{boros2026temporalner,
+  title   = {A Study of Temporal Fusion Strategies for Named Entity Recognition in Historical Texts},
+  author  = {Boros, Emanuela},
+  journal = {arXiv preprint arXiv:2606.27881},
+  year    = {2026},
+  doi     = {10.48550/arXiv.2606.27881}
+}
+```
+
+## License
+
+The code is released under the [GNU General Public License v3.0](LICENSE).
+
+Datasets, pretrained models, and third-party evaluation tools remain subject to their respective licenses and terms of use.
 
 
 
