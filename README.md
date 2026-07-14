@@ -197,6 +197,54 @@ python main.py \
   --do_train
 ```
 
+### 3. German experiment
+
+Replace the three French paths with the corresponding files under `data/hipe2020/de/`:
+
+```bash
+python main.py \
+  --model_name_or_path dbmdz/bert-base-historic-multilingual-cased \
+  --model_type time \
+  --temporal_fusion_strategy film \
+  --use_relative_year \
+  --train_dataset data/hipe2020/de/HIPE-2022-v2.1-hipe2020-train-de.tsv \
+  --dev_dataset data/hipe2020/de/HIPE-2022-v2.1-hipe2020-dev-de.tsv \
+  --test_dataset data/hipe2020/de/HIPE-2022-v2.1-hipe2020-test-de.tsv \
+  --max_sequence_len 512 \
+  --epochs 5 \
+  --train_batch_size 16 \
+  --eval_batch_size 16 \
+  --learning_rate 5e-5 \
+  --output_dir experiments \
+  --device cuda \
+  --do_train
+```
+
+Use `--device cpu` for a CPU-only run. Training will be substantially slower.
+
+## Evaluation
+
+To evaluate a saved checkpoint, provide the same model, data, temporal settings, and the checkpoint directory:
+
+```bash
+python main.py \
+  --model_name_or_path dbmdz/bert-base-historic-multilingual-cased \
+  --model_type time \
+  --temporal_fusion_strategy late-cross-attention \
+  --use_relative_year \
+  --train_dataset data/hipe2020/fr/HIPE-2022-v2.1-hipe2020-train-fr.tsv \
+  --dev_dataset data/hipe2020/fr/HIPE-2022-v2.1-hipe2020-dev-fr.tsv \
+  --test_dataset data/hipe2020/fr/HIPE-2022-v2.1-hipe2020-test-fr.tsv \
+  --max_sequence_len 512 \
+  --output_dir evaluation \
+  --checkpoint PATH/TO/CHECKPOINT \
+  --device cuda \
+  --do_eval
+```
+
+The evaluation code reports sequence-labeling precision, recall, and F1 using `seqeval`, and writes prediction and analysis artifacts to the experiment directory.
+
+
 
 
 
