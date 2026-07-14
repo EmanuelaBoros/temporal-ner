@@ -89,6 +89,39 @@ pip install \
 
 For GPU training, install the PyTorch build matching the CUDA version available on your system.
 
+## Data format
+
+The main loader expects HIPE-style tab-separated data with token-level NER annotations and document-level date metadata. Dates are read from lines such as:
+
+```text
+# hipe2022:date = 1888-01-09
+```
+
+The loader currently trains on the coarse literal NER task:
+
+```text
+NE-COARSE-LIT
+```
+
+The expected columns follow the HIPE format, including fields such as `TOKEN`, `NE-COARSE-LIT`, `NE-FINE-LIT`, `NE-NESTED`, and NEL-related annotations. Sequences are split on blank lines or `EndOfSentence` markers.
+
+Example files are organized by language:
+
+```text
+temporal-ner/data/hipe2020/
+├── de/
+│   ├── HIPE-2022-v2.1-hipe2020-train-de.tsv
+│   ├── HIPE-2022-v2.1-hipe2020-dev-de.tsv
+│   └── HIPE-2022-v2.1-hipe2020-test-de.tsv
+└── fr/
+    ├── HIPE-2022-v2.1-hipe2020-train-fr.tsv
+    ├── HIPE-2022-v2.1-hipe2020-dev-fr.tsv
+    └── HIPE-2022-v2.1-hipe2020-test-fr.tsv
+```
+
+Please consult and respect the licenses and citation requirements of the original HIPE datasets.
+
+
 
 
 
