@@ -148,6 +148,56 @@ Pass a strategy using `--temporal_fusion_strategy`.
 | `early-cross-attention` | Early fusion | Applies token-to-time cross-attention before the Transformer encoder. |
 | `late-cross-attention` | Late fusion | Applies token-to-time cross-attention after contextual encoding. |
 
+## Quick start
+
+Run commands from the main implementation directory:
+
+```bash
+cd temporal-ner
+```
+
+### 1. Baseline model
+
+```bash
+python main.py \
+  --model_name_or_path dbmdz/bert-base-historic-multilingual-cased \
+  --model_type time \
+  --temporal_fusion_strategy baseline \
+  --train_dataset data/hipe2020/fr/HIPE-2022-v2.1-hipe2020-train-fr.tsv \
+  --dev_dataset data/hipe2020/fr/HIPE-2022-v2.1-hipe2020-dev-fr.tsv \
+  --test_dataset data/hipe2020/fr/HIPE-2022-v2.1-hipe2020-test-fr.tsv \
+  --max_sequence_len 512 \
+  --epochs 5 \
+  --train_batch_size 16 \
+  --eval_batch_size 16 \
+  --learning_rate 5e-5 \
+  --output_dir experiments \
+  --device cuda \
+  --do_train
+```
+
+### 2. Late cross-attention with relative years
+
+```bash
+python main.py \
+  --model_name_or_path dbmdz/bert-base-historic-multilingual-cased \
+  --model_type time \
+  --temporal_fusion_strategy late-cross-attention \
+  --use_relative_year \
+  --train_dataset data/hipe2020/fr/HIPE-2022-v2.1-hipe2020-train-fr.tsv \
+  --dev_dataset data/hipe2020/fr/HIPE-2022-v2.1-hipe2020-dev-fr.tsv \
+  --test_dataset data/hipe2020/fr/HIPE-2022-v2.1-hipe2020-test-fr.tsv \
+  --max_sequence_len 512 \
+  --epochs 5 \
+  --train_batch_size 16 \
+  --eval_batch_size 16 \
+  --learning_rate 5e-5 \
+  --output_dir experiments \
+  --device cuda \
+  --do_train
+```
+
+
 
 
 
